@@ -1,0 +1,44 @@
+body {
+
+    background-color: var(--bg-color);
+    min-height: 100vh; /* s’adapte à la taille écran */
+    font-family: var(--font-family), monospace;
+    
+}
+
+h1{
+    margin: 20px;
+}
+
+
+.box-container {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start; /* évite un étirement vertical inutile */
+    row-gap: 8px;   /* espace vertical réduit entre les lignes */
+    column-gap: 3px; /* espace horizontal */
+}
+
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 12px;
+    height: 100px;
+    width: 200px;
+    background-color: var(--text-color);
+    text-decoration: none;
+    color: var(--bg-color);
+    transition: 0.2s;
+}
+
+a:hover{
+    background-color: var(--btn-color);
+    color: var(--text-color);
+}

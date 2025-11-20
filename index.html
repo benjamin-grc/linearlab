@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LinearLab propose des cours, une calculatrice matricielle et un solveur pour maîtriser rapidement l'algèbre linéaire.">
+    <title>LinearLab</title>
+
+    <!-- Feuille de styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/themes.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </label>
+
+        <label id="overlay" for="sidebar-active"></label>
+        <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </label>
+            
+            <a class="home-link " href="index.html"> Menu </a>
+            <a href="pages/theory.html"> Théorie </a>
+            <a href="pages/solveur.html"> Solveur </a>
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" aria-haspopup="true">
+                    Outils matriciels
+                    <span class="chevron" aria-hidden="true"></span>
+                </button>
+                <div class="dropdown-menu" role="menu">
+                    <a class="dropdown-item placeholder"  href="pages/matrixcalc.html">Calculatrice matricielle</a>
+                    <a class="dropdown-item placeholder"  >Visualisation de vecteurs (bientôt)</a>
+                </div>
+            </div>
+            <a href="pages/about.html"> À propos </a>
+
+        </div>
+    </nav>
+
+
+    <div class="container">
+    
+        <div class="title">
+            <h1>Linear Lab</h1>
+            <h2>Site d'outils et de cours pour l'algèbre linéaire</h2>
+        </div>
+
+        <div class="actu">
+            <h3>
+                Actualité
+            </h3>
+            <ul>
+                <li> (20/11/2025) La calculatrice matricielle est beaucoup plus fonctionnelle !!
+                </li>
+                <li> (17/11/2025) Premières fonctions de la calculatrice matricielle</li>
+                <li> (16/11/2025) Ouverture du site, solveur d'équations fonctionnel</li>
+            </ul>
+        </div>
+
+        <div class="main-text">
+        <h3>
+            Motivation
+        </h3>
+        <p>
+            Quand j’ai commencé à apprendre les premières notions d’algèbre linéaire au début de mes études supérieures, une question m’est venue : Pourquoi faire ça ? À première vue, il est vrai que lorsqu’on apprend à résoudre des systèmes linéaires et à manipuler des matrices, on peut très vite remettre en question l’utilité de ces notions. Je veux dire par là que les grands problèmes mathématiques et physiques de notre monde ne sont sans doute rien de linéaire, n’est-ce pas ?
+
+            Non. Il est vrai que ces problèmes ne sont pas linéaires ; en revanche, c’est bien grâce à l’algèbre linéaire que l’on peut approximer des systèmes très complexes pour en trouver la solution.
+            Par exemple, dans la simulation du climat, les équations sont extrêmement non linéaires, mais pour pouvoir les calculer sur un ordinateur, on les découpe et on les approche localement par des systèmes linéaires gigantesques. Sans l’algèbre linéaire, il serait impossible de prédire l’évolution de la météo ou de modéliser le réchauffement climatique.
+            
+            Un autre exemple se trouve dans le traitement d’images : lorsqu’on applique un filtre pour améliorer une photo, détecter des contours ou compresser une image en JPEG, on effectue en réalité des transformations linéaires sur des matrices de pixels. Chaque image est manipulée grâce à l’algèbre linéaire.
+            
+            Pour être plus actuel, l’algèbre linéaire est également à la base du machine learning et de la data science. En bref, c’est un outil absolument incontournable dans tous les domaines des sciences.
+        </p>
+        </div>
+
+    </div>
+</body>
+<footer>
+    <small>Copyright ©<a href="https://benjamingarcia.fr/" target="_blank">Benjamin Garica</a> 2025 linearlab.fr. Tous droits réservés.</small>
+</footer>
+
+</html>
+

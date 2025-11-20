@@ -1,0 +1,28 @@
+:root {
+
+    --bg-color: #EEEEEE;
+    --text-color: #222831;
+    --btn-color: #76ABAE;
+    --btn-hcolor: #31363F;
+
+    --font-family : 'Ubuntu', sans-serif;
+
+    }
+
+
+.darkmode{
+
+    --bg-color: #1b262c;
+    --text-color: #bbe1fa;
+    --btn-color: #0f4c75;
+    --btn-hcolor: #3282b8;
+
+    }
+
+footer {
+    color: var(--text-color);
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    }

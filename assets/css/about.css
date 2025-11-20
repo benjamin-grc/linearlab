@@ -1,0 +1,59 @@
+body {
+
+    background-color: var(--bg-color);
+    min-height: 100vh; /* s’adapte à la taille écran */
+    font-family: var(--font-family), monospace;
+  }
+  
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    margin-top: 50px;
+  }
+  
+  .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  h1 {
+    color: var(--text-color);
+    font-size: 40px;
+  }
+  
+ 
+
+
+  .main-text{
+    /*box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/
+    border: solid 1px black;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    max-width: 70%; /* limite largeur pour meilleure lisibilité */
+    padding: 10px;
+    gap: 10px;
+  }
+  
+  .main-text h3{
+    font-size: 34px;
+    color: var(--text-color);
+    text-align: left;
+  }
+  
+  .main-text p{
+    font-size: 20px;
+    color: black ;
+    line-height: 1.40;
+    justify-content: center;
+    text-align: justify;
+  }
+  
+  

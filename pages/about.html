@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez LinearLab, les outils proposés et les technologies utilisées pour faciliter l'apprentissage de l'algèbre linéaire.">
+    <title>À propos – LinearLab</title>
+
+    <!-- Feuille de styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/themes.css" />
+    <link rel="stylesheet" href="../assets/css/about.css" />
+    <link rel="stylesheet" href="../assets/css/navbar.css" />
+
+    <!-- Chargement du script externe -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjs@11/lib/browser/math.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+    <script src="../assets/js/solver.js"></script>
+    
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="sidebar-active">
+    <label for="sidebar-active" class="open-sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+    </label>
+
+    <label id="overlay" for="sidebar-active"></label>
+    <div class="links-container">
+        <label for="sidebar-active" class="close-sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        </label>
+        
+        <a class="home-link " href="../index.html"> Menu </a>
+        <a href="theory.html"> Théorie </a>
+        <a href="solveur.html"> Solveur </a>
+        <div class="dropdown">
+            <button class="dropdown-toggle" type="button" aria-haspopup="true">
+                Outils matriciels
+                <span class="chevron" aria-hidden="true"></span>
+            </button>
+            <div class="dropdown-menu" role="menu">
+                <a class="dropdown-item placeholder"  href="matrixcalc.html">Calculatrice matricielle</a>
+                <a class="dropdown-item placeholder"  >Visualisation de vecteurs (bientôt)</a>
+            </div>
+        </div>
+        <a href="about.html"> À propos </a>
+
+    </div>
+</nav>
+
+<div class="container">
+    
+    <div class="title">
+        <h1>À propos</h1>
+    </div>
+
+    <div class="main-text">
+
+    <p>
+        Ce site est un outil dédié à l’algèbre linéaire. Il met à disposition un calculateur matriciel complet ainsi qu’un solveur d’équations pour réaliser rapidement des opérations, vérifier des résultats ou explorer différentes méthodes. Une partie théorique est également proposée pour accompagner l’utilisation de l’outil et rappeler les notions essentielles. L’objectif est d’offrir un espace simple, clair et efficace pour travailler l’algèbre linéaire sans logiciel complexe.
+    </p>
+    <br>
+    <p>
+        Pour les personnes intéressées, les calculs matriciels sont réalisés en JavaScript (avec à un Web Worker ;-) ) grâce à la bibliothèque math.js. Le
+        solveur utilise l'algorithme du pivot de Gauss et affiche les solutions en \(\text{LaTeX}\) via le module MathJax.
+    </p>
+    <br>
+    <p>
+        Si vous êtes intéressé par d'autres projets que j'ai réalisés (ou que je réaliserai), vous pouvez vous rendre sur ma
+        page personnelle en cliquant <a href="https://benjamingarcia.fr/" target="_blank">ici</a>.
+    </p>
+    <center>
+    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="garcia31bej" data-color="#232730" data-emoji="☕"  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+    </center>
+    </div>
+
+</div>   
+
+ 
+
+
+  </body>
+  <footer>
+    <small>Copyright ©<a href="https://benjamingarcia.fr/" target="_blank">Benjamin Garica</a> 2025 linearlab.fr. Tous droits réservés.</small>
+  </footer>
+  </html>
+
