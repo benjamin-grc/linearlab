@@ -1,10 +1,22 @@
 body {
-
     background-color: var(--bg-color);
     min-height: 100vh; /* s’adapte à la taille écran */
     font-family: var(--font-family), monospace;
+  
+  
+  
+    background-image:
+      linear-gradient(var(--line-color) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line-color) 1px, transparent 1px);
+    background-size: 35px 35px;
+    animation: drift 25s linear infinite;
     
-}
+    @keyframes drift {
+      from { background-position: 0 0; }
+      to   { background-position: 100px 100px; }
+    }
+  
+  }
 
 h1{
     margin: 20px;

@@ -4,12 +4,23 @@
 
 body {
   background-color: var(--bg-color);
-  color: var(--text-color);
-  min-height: 100vh;
+  min-height: 100vh; /* s’adapte à la taille écran */
   font-family: var(--font-family), monospace;
-  margin: 0;
-}
 
+
+
+  background-image:
+    linear-gradient(var(--line-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line-color) 1px, transparent 1px);
+  background-size: 35px 35px;
+  animation: drift 25s linear infinite;
+  
+  @keyframes drift {
+    from { background-position: 0 0; }
+    to   { background-position: 100px 100px; }
+  }
+
+}
 main {
   display: flex;
   flex-direction: column;
@@ -36,7 +47,7 @@ main {
 
 .page-subtitle {
   margin: 0;
-  color: #637083;
+  color: var(--muted-text);
 }
 
 h1, h2, h3, h4 {
@@ -49,11 +60,11 @@ p {
 }
 
 .panel {
-  background: #fdfdfd;
-  border: 1px solid #dce1e7;
+  border: var(--border-color);
   border-radius: 12px;
-  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--box-shadow);
   padding: 20px;
+  background: var(--panel-color);
 }
 
 .section-title {
@@ -68,10 +79,10 @@ p {
 }
 
 .card {
-  background: #ffffff;
-  border: 1px solid #dce1e7;
+  background: var(--panel-color);
+
   border-radius: 12px;
-  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--box-shadow);
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -98,7 +109,7 @@ p {
 
 .field span {
   font-size: 0.9rem;
-  color: #556072;
+  color: var(--muted-text);
 }
 
 input[type="number"],
@@ -106,10 +117,10 @@ input[type="text"],
 select,
 textarea {
   font-family: var(--font-family);
-  border: 1px solid #cfd5dd;
+  border: 1px solid var(--input-border);
   border-radius: 8px;
   padding: 10px 12px;
-  background: #fff;
+  background: var(--input-bg);
   color: var(--text-color);
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
@@ -119,7 +130,7 @@ select:focus,
 textarea:focus {
   outline: none;
   border-color: var(--btn-color);
-  box-shadow: 0 0 0 3px rgba(118, 171, 174, 0.25);
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.25);
 }
 
 button {
@@ -155,7 +166,7 @@ button.primary:hover {
 button.ghost {
   background-color: var(--btn-color);
   color: var(--text-color);
-  border: 1px solid #cfd5dd;
+  border: 1px solid var(--input-border);
 }
 
 button.ghost:hover {
@@ -165,9 +176,9 @@ button.ghost:hover {
 
 .text-mode {
   padding: 10px;
-  border: 1px solid #e1e6ef;
+  border: 1px solid var(--soft-border);
   border-radius: 10px;
-  background: #f7f8fb;
+  background: var(--input-alt-bg);
   gap: 8px;
   flex-direction: column;
 }
@@ -212,11 +223,11 @@ button.ghost:hover {
   display: flex;
   align-items: center;
   gap: 12px;
-  background: #f7f8fb;
-  border: 1px solid #e1e6ef;
+  background: var(--input-alt-bg);
+  border: 1px solid var(--soft-border);
   border-radius: 10px;
   padding: 10px 12px;
-  color: #4b5565;
+  color: var(--muted-text);
 }
 
 .choice p {
@@ -240,8 +251,8 @@ button.ghost:hover {
   align-items: center;
   gap: 8px;
   padding: 10px 12px;
-  background: #f7f8fb;
-  border: 1px solid #e1e6ef;
+  background: var(--input-alt-bg);
+  border: 1px solid var(--soft-border);
   border-radius: 10px;
 }
 
@@ -252,8 +263,8 @@ button.ghost:hover {
 }
 
 .custom-op {
-  background: #f7f8fb;
-  border: 1px solid #e1e6ef;
+  background: var(--input-alt-bg);
+  border: 1px solid var(--soft-border);
   border-radius: 10px;
   padding: 12px;
   display: flex;
@@ -265,7 +276,7 @@ button.ghost:hover {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  color: #4b5565;
+  color: var(--muted-text);
 }
 
 .custom-op__header h4 {
@@ -310,19 +321,23 @@ button.ghost:hover {
   gap: 8px;
 }
 
+.result-item{
+  color: var(--text-color);
+}
+
 .resultat-list > div {
   padding: 12px;
   margin: 0;
   border-radius: 10px;
-  border: 1px solid #e1e6ef;
+  border: 1px solid var(--soft-border);
 }
 
 .resultat-list > div:nth-child(odd) {
-  background-color: #edf5ff;
+  background-color: var(--accent-surface-one);
 }
 
 .resultat-list > div:nth-child(even) {
-  background-color: #e6f7ea;
+  background-color: var(--accent-surface-two);
 }
 
 /* Remove native spinners */

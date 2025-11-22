@@ -1,10 +1,23 @@
-body {
-
+    body {
     background-color: var(--bg-color);
     min-height: 100vh; /* s’adapte à la taille écran */
     font-family: var(--font-family), monospace;
-  }
   
+  
+  
+    background-image:
+      linear-gradient(var(--line-color) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line-color) 1px, transparent 1px);
+    background-size: 35px 35px;
+    animation: drift 25s linear infinite;
+    
+    @keyframes drift {
+      from { background-position: 0 0; }
+      to   { background-position: 100px 100px; }
+    }
+  
+  }
+
   .container{
     display: flex;
     justify-content: center;
@@ -32,7 +45,7 @@ body {
 
   .main-text{
     /*box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/
-    border: solid 1px black;
+    border: var(--border-color);
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -40,6 +53,8 @@ body {
     max-width: 70%; /* limite largeur pour meilleure lisibilité */
     padding: 10px;
     gap: 10px;
+    background: var(--panel-color);
+    box-shadow: var(--box-shadow);
   }
   
   .main-text h3{
@@ -50,7 +65,7 @@ body {
   
   .main-text p{
     font-size: 20px;
-    color: black ;
+    color: var(--text-color) ;
     line-height: 1.40;
     justify-content: center;
     text-align: justify;

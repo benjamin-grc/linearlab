@@ -9,9 +9,9 @@ html{
 } 
 
 nav{
-    
+
     height: 60px;
-    background-color: var(--text-color);
+    background-color: var(--nav-bg);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -33,7 +33,7 @@ nav a{
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: var(--bg-color);
+    color: #e8ecf5;
 }
 
 nav a:hover{
@@ -51,7 +51,7 @@ nav a:hover{
 .dropdown-toggle{
     background: transparent;
     border: none;
-    color: var(--bg-color);
+    color: #e8ecf5;
     font: inherit;
     height: 100%;
     padding: 0 20px;
@@ -86,7 +86,7 @@ nav a:hover{
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: var(--text-color);
+    background-color: var(--nav-bg);
     min-width: 210px;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.25);
     flex-direction: column;
@@ -97,11 +97,12 @@ nav a:hover{
 .dropdown-menu .dropdown-item{
     height: auto;
     padding: 12px 20px;
+
 }
 
 .dropdown-menu .placeholder{
-    color: var(--bg-color);
     cursor: pointer;
+    color: white;
 }
 
 .dropdown:hover .dropdown-menu,
@@ -114,7 +115,7 @@ nav .home-link{
 }
 
 nav svg{
-    fill: var(--bg-color)
+    fill: var(--text-color)
 }
 
 #sidebar-active{
@@ -137,7 +138,7 @@ nav svg{
         z-index: 10;
         width: 200px;
 
-        background-color: var(--text-color);
+        background-color: var(--nav-bg);
         box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
         transition: 0.70s ease-out;
     }
