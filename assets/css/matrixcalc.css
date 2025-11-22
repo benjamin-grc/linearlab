@@ -153,17 +153,17 @@ button.primary:hover {
 }
 
 button.ghost {
-  background: transparent;
+  background-color: var(--btn-color);
   color: var(--text-color);
   border: 1px solid #cfd5dd;
 }
 
 button.ghost:hover {
-  background: #f1f3f7;
+  background-color: var(--text-color);
+  color: var(--bg-color);
 }
 
 .text-mode {
-  display: none;
   padding: 10px;
   border: 1px solid #e1e6ef;
   border-radius: 10px;

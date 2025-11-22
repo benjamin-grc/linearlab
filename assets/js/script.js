@@ -62,8 +62,25 @@ if (window.Worker) {
         appendResultHTML(`rang de ${label} = ${result}`);
         break;
     }
+ 
   };
 }
+
+//---------------------- Gère le scroll quand on affiche un calcul -------------
+
+document.addEventListener("click", function (e) {
+  // détecter un clic sur un bouton de calcul
+  if (e.target.matches(".button-grid button, .inline-actions button")) {
+
+    const restitle = document.getElementById("restitle");
+    if (!restitle) return;
+
+    restitle.scrollIntoView({
+      behavior: "smooth",
+      block: "center"
+    });
+  }
+});
 
 // ---------------------- Text Input ----------------------
 
