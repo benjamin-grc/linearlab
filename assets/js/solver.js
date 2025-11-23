@@ -7,11 +7,18 @@ let rhsInputs = [];
 function fractionLatex(x) {
   try {
     const f = math.fraction(x);
-    return f.d === 1 ? `${f.n}` : `\\frac{${f.n}}{${f.d}}`;
+    const sign = f.s < 0 ? "-" : "";
+    const num = Math.abs(f.n);
+    const den = f.d;
+
+    return den === 1 
+      ? `${sign}${num}`
+      : `${sign}\\frac{${num}}{${den}}`;
   } catch {
     return `${x}`;
   }
 }
+
 
 function approxString(value) {
   if (!isFinite(value)) return value.toString();
