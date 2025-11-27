@@ -115,7 +115,7 @@ nav .home-link{
 }
 
 nav svg{
-    fill: var(--text-color)
+    fill: withe;
 }
 
 #sidebar-active{
